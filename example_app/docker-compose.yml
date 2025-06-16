@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    image: ghcr.io/owner/example-app:latest
+    restart: always
+    command: poetry run python -m app.main
