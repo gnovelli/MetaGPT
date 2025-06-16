@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "example-app"
+version = "0.1.0"
+description = "Example application using MetaGPT"
+authors = ["Example <example@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+metagpt = {path = "../", develop = true}
+
+[tool.poetry.scripts]
+example-app = "app.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
